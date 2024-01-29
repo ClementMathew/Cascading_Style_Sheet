@@ -1,0 +1,39 @@
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    margin: 30px 15px;
+    float: left;
+    list-style: none;
+}
+
+.navbar li a {
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.navbar li a:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.search{
+    float: right;
+    color: white;
+    padding: 25px 86px;
+}
+
+.search input{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 7px 15px;
+}

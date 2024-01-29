@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes & N-th Child Pseudoselectors</title>
+
+    <style>
+        .container7 {
+            display: block;
+            width: 523px;
+            margin: auto;
+        }
+
+        .container7 input {
+            display: block;
+        }
+
+        .container7 input[type='text'] {
+            padding: 23px;
+            border: 5px solid red;
+        }
+
+        .container7 a[target] {
+            font-size: 34px;
+            color: blue;
+        }
+
+        .container7 a[target='_self'] {
+            font-size: 34px;
+            color: crimson;
+        }
+
+        .container7 li[class='item2']:nth-child(3) {
+            color: green;
+            font-size: 40px;
+        }
+
+        .container7 li[class='item2']:nth-child(2n+0) {
+            color: red;
+            font-size: 40px;
+        }
+
+        .container7 li[class='item2']:nth-child(odd) {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container7">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name : ">
+            <input type="password" placeholder="Enter your password : ">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item2" id="item2-1">Item1</li>
+            <li class="item2" id="item2-2">Item2</li>
+            <li class="item2" id="item2-3">Item3</li>
+            <li class="item2" id="item2-4">Item4</li>
+            <li class="item2" id="item2-5">Item5</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container4 {
+            height: 444px;
+            width: 100%;
+            border: 3px solid black;
+            display: flex;
+
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            flex-flow: row-reverse wrap;
+
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space space-evenly;
+            justify-content: space space-around;
+
+            align-items: flex-end;
+            align-items: center;
+            align-items: flex-start;
+            align-items: stretch;
+
+            /* in stretch it will remain same when width decreased */
+
+        }
+
+        .chathuram {
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 5px;
+            border: 3px solid black;
+        }
+
+        #chathuram1 {
+            order: 1;
+        }
+
+        #chathuram2 {
+            order: 2;
+        }
+
+        #chathuram3 {
+            flex-grow: 1;
+        }
+
+        #chathuram4 {
+            flex-grow: 2;
+        }
+
+        #chathuram5 {
+            flex-shrink: 2;
+        }
+
+        #chathuram6 {
+            flex-basis: 200px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+
+            flex: 2 2 230px;
+            /* flex grow, flex shrink, flex basis*/
+
+            align-self: self-end;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container4">
+        <div class="chathuram" id="chathuram1">First Box</div>
+        <div class="chathuram" id="chathuram2">Second Box</div>
+        <div class="chathuram" id="chathuram3">Third Box</div>
+        <div class="chathuram" id="chathuram4">Fourth Box</div>
+        <div class="chathuram" id="chathuram5">Fifth Box</div>
+        <div class="chathuram" id="chathuram6">Sixth Box</div>
+    </div>
+</body>
+
+</html>

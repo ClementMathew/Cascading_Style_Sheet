@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size & Units</title>
+    <style>
+        .container5 {
+            border: 3px solid black;
+            width: 80vw;
+            height: 50vh;
+            font-size: 20px;
+        }
+
+        #head1 {
+            font-size: 3em;
+            /* 3 times parent */
+            padding: 2em;
+            width: 1000px;
+        }
+
+        #head2 {
+            font-size: 2rem;
+            /* 2 times the html selector ie root selector*/
+            width: 700px;
+        }
+
+        #head3 {
+            font-size: 1em;
+            width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container5">
+        <h1 id="head1">This is my first heading</h1>
+        <h1 id="head2">This is my second heading</h1>
+        <h1 id="head3">This is my third heading</h1>
+    </div>
+</body>
+
+</html>

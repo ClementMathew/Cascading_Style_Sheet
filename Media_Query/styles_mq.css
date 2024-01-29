@@ -1,0 +1,32 @@
+.query {
+    font-size: 150px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    display: none;
+}
+
+@media (max-width:500px) {
+    #query1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:1000px) {
+    #query2 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1500px) {
+    #query3 {
+        display: block;
+    }
+}
+
+@media (min-width:1501px) {
+    #query4 {
+        display: block;
+    }
+}

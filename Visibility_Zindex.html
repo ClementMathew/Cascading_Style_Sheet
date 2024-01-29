@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index</title>
+    <style>
+        
+        .petti {
+            width: 170px;
+            height: 170px;
+            border: 5px solid black;
+        }
+
+        #petti1 {
+            background-color: green;
+            display: none;
+            visibility: hidden;
+        }
+
+        #petti2 {
+            background-color: red;
+        }
+
+        #petti3 {
+            background-color: blue;
+            position: relative;
+            top: 50px;
+            z-index: 10;
+        }
+
+        #petti4 {
+            position: relative;
+            background-color: yellow;
+            z-index: 15;
+        }
+    </style>
+</head>
+<body>
+    <div class="petti" id="petti1"></div>
+    <div class="petti" id="petti2"></div>
+    <div class="petti" id="petti3"></div>
+    <div class="petti" id="petti4"></div>
+
+</body>
+</html>
